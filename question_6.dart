@@ -1,8 +1,3 @@
-// void main() {
-//   var items = {'Soap': 40, 'dress': 1500};
-//   print(items.values);
-// }
-
 void main() {
   List<int> numbers = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
   int sum = 0;
