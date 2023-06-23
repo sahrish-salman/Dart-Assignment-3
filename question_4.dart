@@ -1,12 +1,8 @@
 void main() {
-  List numbers = [1, 2, 2, 4, 5, 6, 7, 8, 9, 10];
+  List<int> numbers = [40, 45, 37, 90, 20, 63, 85, 11, 77, 29];
+  int smallestNumber = numbers.reduce((a, b) => a < b ? a : b);
+  int greatestNumber = numbers.reduce((a, b) => a > b ? a : b);
 
-  List<bool> evenList = numbers.map((numbers) => numbers % 2 == 0).toList();
-  evenList.removeWhere((falsevalue) => falsevalue == false);
-
-  List<bool> oddList = numbers.map((numbers) => numbers % 2 == 0).toList();
-  oddList.removeWhere((truevalue) => truevalue == true);
-
-  print(evenList);
-  print(oddList);
+  print("Smallest number is $smallestNumber.");
+  print("Greatest Number is $greatestNumber.");
 }
